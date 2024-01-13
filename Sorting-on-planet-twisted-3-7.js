@@ -31,3 +31,5 @@ function sortTwisted37(array) {
     return parseInt(number.toString().replace(/[37]/g,=>MAPPING[a]));
   }
 }
+
+// or
