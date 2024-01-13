@@ -18,3 +18,6 @@ will always contain at least one number.
 
 You should not modify the input array!
 */
+
+
+// Solution
