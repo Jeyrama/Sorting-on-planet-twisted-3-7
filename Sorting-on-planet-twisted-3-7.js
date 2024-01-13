@@ -28,7 +28,7 @@ function sortTwisted37(array) {
   return array.slice().sort((a,b) => twist(a) - twist(b));
 
   function twist(number) {
-    return parseInt(number.toString().replace(/[37]/g,=>MAPPING[a]));
+    return parseInt(number.toString().replace(/[37]/g,a=>MAPPING[a]));
   }
 }
 
