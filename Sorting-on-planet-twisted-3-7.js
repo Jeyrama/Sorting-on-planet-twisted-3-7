@@ -33,3 +33,23 @@ function sortTwisted37(array) {
 }
 
 // or
+
+function doesNumInclude3Or7(num) {
+  return /3|7/.test(num);
+}
+
+function swap3And7(num) {
+  return Number(num.toString().split('').map(function(num) {
+    if (num !== '3' && num !== '7') return num;
+    return num === '3' ? 7 : 3;
+  }).join(''));
+}
+
+function sortTwisted37(array) {
+  let numbers = array.slice(0);
+  return numbers.sort(function(a, b) {
+    if (doesNumInclude3Or7(a)) a = swap3And7(a);
+    if (doesNumInclude3Or7(b)) b = swap3And7(b);    
+    return a - b;
+  });
+}
